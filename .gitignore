@@ -40,12 +40,6 @@ migrations/
 *.sql
 *.dump
 
-# OpenAI / ChatGPT authentication
-.openai/
-.openai-auth/
-openai-auth/
-app/chatgpt-auth.ts
-
 # Operating-system and editor files
 .DS_Store
 .idea/
