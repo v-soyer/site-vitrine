@@ -22,14 +22,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Database code, configuration, migrations, and local data
-db/
-database/
-databases/
-drizzle/
-drizzle.config.*
-examples/d1/
-migrations/
+# Local database data
 *.db
 *.db-journal
 *.db-shm
