@@ -7,6 +7,7 @@ import {
   SiMongodb,
   SiNeo4J,
   SiNestjs,
+  SiOpenai,
   SiPostgresql,
   SiPython,
 } from "react-icons/si";
@@ -31,6 +32,7 @@ const ORBITS: OrbitSpec[] = [
   { name: "NestJS", ring: "inner", duration: 24, direction: -1, start: .55, radius: .39, compactRadius: .37, floatX: 8, floatY: 8, floatPeriodX: 10.8, floatPeriodY: 7.8 },
   { name: "JavaScript", ring: "inner", duration: 24, direction: -1, start: 2.5, radius: .39, compactRadius: .37, floatX: 7, floatY: 10, floatPeriodX: 9.3, floatPeriodY: 12.4 },
   { name: "Shell / PowerShell", ring: "inner", duration: 24, direction: -1, start: 4, radius: .39, compactRadius: .37, floatX: 8, floatY: 7, floatPeriodX: 12.8, floatPeriodY: 9.7 },
+  { name: "OpenAI", ring: "outer", duration: 24, direction: 1, start: .05, radius: .53, compactRadius: .5, floatX: 10, floatY: 8, floatPeriodX: 11.6, floatPeriodY: 8.9 },
   { name: "PostgreSQL", ring: "outer", duration: 24, direction: 1, start: .7, radius: .53, compactRadius: .5, floatX: 11, floatY: 7, floatPeriodX: 9.8, floatPeriodY: 12.1 },
   { name: "MongoDB", ring: "outer", duration: 24, direction: 1, start: 1.55, radius: .53, compactRadius: .5, floatX: 9, floatY: 8, floatPeriodX: 13.2, floatPeriodY: 10.4 },
   { name: "Neo4j", ring: "outer", duration: 24, direction: 1, start: 2.7, radius: .53, compactRadius: .5, floatX: 12, floatY: 7, floatPeriodX: 12.8, floatPeriodY: 9.7 },
@@ -42,6 +44,7 @@ function OrbitIcon({ name }: { name: string }) {
   if (name === "NestJS") return <SiNestjs aria-hidden="true" />;
   if (name === "JavaScript") return <SiJavascript aria-hidden="true" />;
   if (name === "Shell / PowerShell") return <TbBrandPowershell aria-hidden="true" />;
+  if (name === "OpenAI") return <SiOpenai aria-hidden="true" />;
   if (name === "PostgreSQL") return <SiPostgresql aria-hidden="true" />;
   if (name === "MongoDB") return <SiMongodb aria-hidden="true" />;
   if (name === "Neo4j") return <SiNeo4J aria-hidden="true" />;
@@ -190,7 +193,7 @@ export default function HeroEcosystem() {
   };
 
   return (
-    <div ref={stageRef} className="ecosystem-stage" aria-label="Écosystème technologique : Python, NestJS, JavaScript, PowerShell, PostgreSQL, MongoDB, Neo4j et Docker">
+    <div ref={stageRef} className="ecosystem-stage" aria-label="Écosystème technologique : Python, NestJS, JavaScript, PowerShell, OpenAI, PostgreSQL, MongoDB, Neo4j et Docker">
       <div className="orbit-guide orbit-guide-outer" aria-hidden="true" />
       <div className="orbit-guide orbit-guide-inner" aria-hidden="true" />
 

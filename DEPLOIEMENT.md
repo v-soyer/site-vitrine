@@ -31,7 +31,7 @@ Le projet utilise Vinext et le runtime Cloudflare Worker : choisissez ce preset 
 
 - Aucune variable d'environnement n'est requise actuellement.
 - Les fichiers propres à l'hébergement précédent, l'historique Git, les dépendances installées et les builds temporaires ont été exclus.
-- Le build ne dépend d'aucun fichier de configuration ou d'authentification externe.
+- Le fichier `.openai/hosting.json` présent dans l'archive est volontairement neutre et ne contient aucun identifiant de projet.
 
 ## Fichiers principaux
 
